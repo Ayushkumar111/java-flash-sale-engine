@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+
+ # data base service 
+  postgres:
+    image: postgres:18
+    container_name: flashgrid-postgres
+    environment:
+      POSTGRES_DB: flashgrid
+      POSTGRES_USER: flashgrid
+      POSTGRES_PASSWORD: flashgrid
+    ports:
+      - "5432:5432"
+
+  # rabbit mq service 
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: flashgrid-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+        - "5672:5672"   # The port your Java App uses to talk to RabbitMQ
+        - "15672:15672"    # the port i will use to see the dashboard ui 
+
+  # redis gatekeeper stops extra request reaching queue
+
+  redis:
+    image: redis:alpine
+    container_name: flashgrid_cache
+    ports:
+      - "6379:6379"     

@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flashgrid?timezone=Asia/Kolkata
+    username: flashgrid
+    password: flashgrid
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  #rabbit mq configuration
+
+  rabbitmq:
+    host: localhost
+    port: 5672 
+    username: guest
+    password: guest 
+  
+  threads:
+    virtual:
+      enabled:true # virtual threads are enabled now 
