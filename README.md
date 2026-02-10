@@ -1,3 +1,7 @@
+<img width="1152" height="283" alt="image" src="https://github.com/user-attachments/assets/bee66e2f-9ec3-4f5c-a639-9ae0f42bab01" />
+
+
+
 # Flashgrid - Java Flash Sale Engine
 
 Flashgrid is a high-concurrency event-driven e-commerce engine designed to handle flash sales. It utilizes a caching layer for pre-check validation and a message queue for asynchronous order processing to prevent database overload during high traffic spikes.
