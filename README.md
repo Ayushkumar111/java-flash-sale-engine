@@ -103,3 +103,7 @@ Attempts to purchase a product. This request is rate-limited by inventory availa
       "userId": 101,
       "productId": 1
     }
+<img width="1564" height="484" alt="image" src="https://github.com/user-attachments/assets/5d7bd633-1c83-440f-91a6-cade05defc80" />
+<img width="1500" height="587" alt="image" src="https://github.com/user-attachments/assets/a60733bc-800e-4e3c-aa15-cd49c1fc0e7c" />
+
+
